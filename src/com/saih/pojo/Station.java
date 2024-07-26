@@ -5,8 +5,11 @@ import java.math.BigDecimal;
 public class Station {
 
     private Integer stationID;
+
     private String stationName;
+
     private String stationAddress;
+
     private BigDecimal stationLongitude;
 
     private BigDecimal stationLatitude;
