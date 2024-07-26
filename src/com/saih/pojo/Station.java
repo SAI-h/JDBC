@@ -9,6 +9,22 @@ public class Station {
     private String stationAddress;
     private BigDecimal stationLongitude;
 
+    private BigDecimal stationLatitude;
+
+    private String remarks;
+
+    public Station() {
+
+    }
+    public Station(Integer stationID, String stationName, String stationAddress, BigDecimal stationLongitude, BigDecimal stationLatitude, String remarks) {
+        this.stationID = stationID;
+        this.stationName = stationName;
+        this.stationAddress = stationAddress;
+        this.stationLongitude = stationLongitude;
+        this.stationLatitude = stationLatitude;
+        this.remarks = remarks;
+    }
+
     @Override
     public String toString() {
         return "Station{" +
@@ -19,21 +35,6 @@ public class Station {
                 ", stationLatitude=" + stationLatitude +
                 ", remarks='" + remarks + '\'' +
                 '}';
-    }
-
-    private BigDecimal stationLatitude;
-    private String remarks;
-
-    public Station() {
-    }
-
-    public Station(Integer stationID, String stationName, String stationAddress, BigDecimal stationLongitude, BigDecimal stationLatitude, String remarks) {
-        this.stationID = stationID;
-        this.stationName = stationName;
-        this.stationAddress = stationAddress;
-        this.stationLongitude = stationLongitude;
-        this.stationLatitude = stationLatitude;
-        this.remarks = remarks;
     }
 
     public Integer getStationID() {
